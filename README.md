@@ -1,3 +1,48 @@
-# screen-ruler
-Screen ruler for Windows – measure anything on screen in px, mm, and inch
-[README.md](https://github.com/user-attachments/files/33698604/README.md)
+# Screen Ruler (화면 자)
+
+Windows용 화면 자입니다. 다른 프로그램 위에 항상 떠 있는 반투명 자로, 화면 어디서나 **픽셀 · mm · inch** 로 길이를 잴 수 있습니다.
+
+A translucent, always-on-top screen ruler for Windows. Measure anything on screen in px, mm, and inch.
+
+## 다운로드
+
+오른쪽 **Releases** 에서 최신 `screen-ruler.zip` 을 받아 압축을 풀면 `screen-ruler.exe` 가 나옵니다. 설치 없이 더블클릭하면 바로 실행됩니다.
+
+## 사용법
+
+- 자 **몸통을 끌면** 이동합니다.
+- 자의 **끝(오른쪽 또는 아래쪽)을 끌면** 길이가 조절됩니다.
+- 왼쪽(세로일 때는 위쪽) 띠의 버튼으로 **회전 · 단위 · 보정 · 닫기** 를 할 수 있습니다.
+- **오른쪽 클릭** 으로 메뉴를 엽니다. 단위, 투명도, 보정을 여기서도 바꿀 수 있습니다.
+- 듀얼 모니터에서도 모니터 사이를 넘어 끌고 다닐 수 있습니다.
+
+### 단축키
+
+| 키 | 동작 |
+| --- | --- |
+| R | 가로 / 세로 전환 |
+| U | 단위 바꾸기 (px → mm → inch → mm+inch) |
+| + / - | 투명도 올리기 / 내리기 |
+| 방향키 | 1px 이동 (Shift 를 누르면 10px) |
+| C | 보정 시작 / 확정 |
+| Enter | 보정 확정 |
+| Esc | 보정 취소 (보정 중이 아니면 닫기) |
+| Q | 닫기 |
+
+## mm · inch 를 정확하게 쓰려면 (보정)
+
+픽셀(px)은 정확하지만, mm 와 inch 는 모니터마다 실제 크기가 달라서 처음에는 **대략값** 입니다. 신용카드(가로 85.6mm)로 한 번만 맞춰 두면 정확해집니다.
+
+1. 모니터 화면에 신용카드를 대고 **C** 를 누릅니다.
+2. 자의 끝을 카드의 가로 끝에 맞춥니다.
+3. **Enter** 를 누르면 보정이 끝납니다.
+
+보정값은 사용자 폴더의 `.screen-ruler.json` 에 저장되어 다음 실행 때도 유지됩니다. 보정을 되돌리려면 오른쪽 클릭 메뉴의 **보정 초기화** 를 누르세요.
+
+## 윈도우 경고가 뜰 때
+
+개인이 만든 프로그램이라 처음 실행하면 Windows 가 "Windows의 PC 보호" 화면을 띄울 수 있습니다. **추가 정보 → 실행** 을 누르면 실행됩니다. 이 프로그램은 인터넷에 연결하지 않으며, 보정값을 저장하는 파일 하나 외에는 아무것도 기록하지 않습니다.
+
+## 만든 사람
+
+JUNI KANG
